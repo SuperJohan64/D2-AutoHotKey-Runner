@@ -13,10 +13,9 @@ Run, "Launch PlugY.bat"
 
 	; Pauses all imput for half a second while the game returns to the game's main menu.
 	; LK Farming Delay 4000
-	; PitZerker MFing 3000
-	; Pindle Zerker 4000
-	; CS Hammerdin 2000
-	; nm andy zerker 7500
+	; PitZerker Delay 3000
+	; Pindle Zerker Delay 4000
+	; CS Hammerdin Delay 2000
 	Sleep 4000
 
 	; Clicks on the 'Single Player' Button.
