@@ -8,8 +8,8 @@ Run, "Launch PlugY.bat"
 	Send {Esc}
 
 	; Cliks on 'Save and Exit Game' in Diablo II's Pause Menu. 
-	;Note that the X/Y axis may need to be updated for each PC depending on the resolution and settings.
-	MouseClick, left, 526, 281
+	; Note that the X/Y axis may need to be updated for each PC depending on the resolution and settings.
+	MouseClick, left, 525, 280
 
 	; Pauses all imput for half a second while the game returns to the game's main menu.
 	; LK Farming Delay 4000
@@ -20,7 +20,8 @@ Run, "Launch PlugY.bat"
 	Sleep 4000
 
 	; Clicks on the 'Single Player' Button.
-	MouseClick, left, 409, 331
+	; Note that the X/Y axis may need to be updated for each PC depending on the resolution and settings.
+	MouseClick, left, 410, 330
 
 	; Presses the Enter key to select the first character then presses the "H" key to select Hell difficulty.
 	Send, {Enter}, {H}
