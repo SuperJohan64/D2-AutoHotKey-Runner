@@ -1,10 +1,6 @@
 ;IfWinNotExist, "C:\Program Files (x86)\Diablo II\Game.exe"
-;	Run, "Launch PlugY.bat"
-;	Run, "C:\Program Files (x86)\Diablo II\Game.exe" -w -ns
+	Run, "Launch PlugY.bat"
 	
-;IfWinNotExist, "C:\Users\johan\Dropbox\Scripts\Projects\D2 PlugY\Diablo II Run Counter\mf_timer.exe"
-;	Run, "C:\Users\johan\Dropbox\Scripts\Projects\D2 PlugY\Diablo II Run Counter\mf_timer.exe"
-
 ; Triggers the macro by pressing Shift(+) ALT(!) and Q at the same time.
 +!Q::
 
@@ -44,6 +40,6 @@ return
 ; Runs the backup script by pressing Shift(+) CRTL(^) ALT(!) and B at the same time.
 +^!B::
 
-	run cmd.exe /C "Run Backup PlugY.bat"
+	run, "Backup PlugY.bat"
 	
 return
