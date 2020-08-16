@@ -1,1 +1,1 @@
-powershell -ExecutionPolicy Bypass -File "%~dp0Backup-PlugY.ps1"
+powershell -ExecutionPolicy Bypass -File "%~dp0Backup PlugY.ps1"
