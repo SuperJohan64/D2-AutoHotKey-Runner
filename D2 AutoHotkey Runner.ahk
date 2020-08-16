@@ -32,14 +32,10 @@ return
 
 ; Runs the backup script by pressing Shift(+) CRTL(^) ALT(!) and P at the same time.
 +^!P::
-
 	Run, "Launch PlugY.bat"
-	
 return
 
 ; Runs the backup script by pressing Shift(+) CRTL(^) ALT(!) and B at the same time.
 +^!B::
-
 	run, "Backup PlugY.bat"
-	
 return
