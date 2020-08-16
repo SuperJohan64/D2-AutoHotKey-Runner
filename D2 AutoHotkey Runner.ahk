@@ -1,5 +1,5 @@
-;IfWinNotExist, "C:\Program Files (x86)\Diablo II\Game.exe"
-	Run, "Launch PlugY.bat"
+; Starts D2 PlugY
+Run, "Launch PlugY.bat"
 	
 ; Triggers the macro by pressing Shift(+) ALT(!) and Q at the same time.
 +!Q::
