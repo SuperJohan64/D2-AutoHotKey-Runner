@@ -1,5 +1,7 @@
 ; Starts D2 PlugY
-Run, "Launch PlugY.bat"
+Run, "PlugY.lnk"
+Run, "LosslessScaling.lnk"
+Run, "mf_timer.exe"
 	
 ; Triggers the macro by pressing Shift(+) ALT(!) and Q at the same time.
 +!Q::
@@ -10,12 +12,7 @@ Run, "Launch PlugY.bat"
 	; Cliks on 'Save and Exit Game' in Diablo II's Pause Menu. 
 	; Note that the X/Y axis may need to be updated for each PC depending on the resolution and settings.
 	MouseClick, left, 525, 280
-
-	; Pauses all imput for half a second while the game returns to the game's main menu.
-	; LK Farming Delay 4000
-	; PitZerker Delay 3000
-	; Pindle Zerker Delay 4000
-	; CS Hammerdin Delay 2000
+	
 	Sleep 4000
 
 	; Clicks on the 'Single Player' Button.
@@ -24,18 +21,78 @@ Run, "Launch PlugY.bat"
 
 	; Presses the Enter key to select the first character then presses the "H" key to select Hell difficulty.
 	Send, {Enter}, {H}
-
-	; Presses CRTL(^) + F11 to trigger a new run in mf_timer.exe
-	; Send ^{F11}
-
 return
 
 ; Runs the backup script by pressing Shift(+) CRTL(^) ALT(!) and P at the same time.
 +^!P::
-	Run, "Launch PlugY.bat"
+	Run, "PlugY.lnk"
+return
+
+; Runs the MF Timer.
++^!M::
+	Run, "mf_timer.exe"
+return
+
+; Runs the LosslessScaling tool.
++^!L::
+	Run, "LosslessScaling.lnk"
 return
 
 ; Runs the backup script by pressing Shift(+) CRTL(^) ALT(!) and B at the same time.
 +^!B::
-	run, "Backup PlugY.bat"
+	Run, "Backup PlugY.bat"
+return
+
+; Ends closes all D2 programs except AutoHotKey.
++^!O::
+	Run, "CloseD2.bat"
+return
+
+; Macros that change the player difficulty in Diablo 2 single player by pressing CRTL (^) and a number on the keypad.
+^Numpad1::
+	Send, {Enter} 
+	Sleep 50
+	Send, /players1 {Enter}
+return
+
+^Numpad2::
+	Send, {Enter} 
+	Sleep 50
+	Send, /players2 {Enter}
+return
+
+^Numpad3::
+	Send, {Enter} 
+	Sleep 50
+	Send, /players3 {Enter}
+return
+
+^Numpad4::
+	Send, {Enter} 
+	Sleep 50
+	Send, /players4 {Enter}
+return
+
+^Numpad5::
+	Send, {Enter} 
+	Sleep 50
+	Send, /players5 {Enter}
+return
+
+^Numpad6::
+	Send, {Enter} 
+	Sleep 50
+	Send, /players6 {Enter}
+return
+
+^Numpad7::
+	Send, {Enter} 
+	Sleep 50
+	Send, /players7 {Enter}
+return
+
+^Numpad8::
+	Send, {Enter} 
+	Sleep 50
+	Send, /players8 {Enter}
 return
